@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "create-vite": "^4.4.1",
-    "jest": "^27.0.6"
+    "jest": "^27.0.6",
+    "tailwindcss": "^3.3.3"
   }
 }
