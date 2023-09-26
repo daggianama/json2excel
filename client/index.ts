@@ -1,5 +1,6 @@
-import * as XLSX from "xlsx";
+import { generateExcelFile } from "./generateExcelFile"; 
 import { processData } from "./dataProcessor";
+import { processExcelFile } from "./processExcelFile";
 
 document.addEventListener("DOMContentLoaded", function () {
 	const jsonInput1 = document.getElementById(
@@ -16,6 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	const processButton = document.getElementById(
 		"processButton"
+	) as HTMLButtonElement | null;
+
+	const uploadExcel = document.getElementById(
+		"uploadExcel"
 	) as HTMLButtonElement | null;
 
 	if (processButton) {
@@ -42,8 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
 				// Procesar los datos utilizando la función processData
 				const filteredData = processData(lines1, lines2, lines3);
 
-				// Generar y descargar el archivo Excel
-				generateExcelFile(filteredData);
+				// Generar el libro de Excel
+				const wb = generateExcelFile(filteredData);
+
+				
 			} catch (error) {
 				if (error instanceof Error) {
 					console.error("Error al procesar el archivo JSON:", error);
@@ -59,17 +66,18 @@ document.addEventListener("DOMContentLoaded", function () {
 			}
 		});
 	}
+
+	if (uploadExcel) {
+		uploadExcel.addEventListener("click", async (event) => {
+			const fileInput = document.getElementById(
+				"uploadExcelFile"
+			) as HTMLInputElement | null;
+
+			if (fileInput) {
+				console.log(fileInput.files);
+				processExcelFile(fileInput.files![0]);
+			}
+
+		});
+	}
 });
-
-function generateExcelFile(data: Record<string, string>[]) {
-	// Crea un libro de Excel
-	const ws = XLSX.utils.json_to_sheet(data);
-	const wb = XLSX.utils.book_new();
-	XLSX.utils.book_append_sheet(wb, ws, "Sheet 1");
-
-	// Genera un nombre de archivo único para el Excel
-	const uniqueFileName = "output.xlsx";
-
-	// Descarga el archivo Excel
-	XLSX.writeFile(wb, uniqueFileName);
-}
