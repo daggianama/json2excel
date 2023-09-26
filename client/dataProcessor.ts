@@ -1,7 +1,7 @@
 export function processData(lines1: string[], lines2: string[], lines3: string[]): Record<string, string>[] {
     const filteredData: Record<string, string>[] = [];
 
-    const findValueForKey = (lines: string[], key: string): string => {
+    const findValueForKey = (lines: string[], key: string): string => { // this function is used internally to find the value for a given key
         for (const line of lines) {
             const trimmedLine = line ? line.trim() : "";
             const lineWithoutBrackets = trimmedLine.replace(/[{}]/g, "");
