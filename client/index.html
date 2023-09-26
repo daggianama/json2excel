@@ -1,25 +1,67 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Procesar JSON y descargar Excel</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdn.tailwindcss.com"></script>  
+	<head>
+		<title>Procesar JSON y descargar Excel</title>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		/>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div class="flex flex-col my-1">
+			<div class="my-10 flex flex-col  ">
+				<h3 class="text-xl font-bold text-left">JSON to Excel</h3>
+				<p class="text-sm text-left">
+					Procesa JSON, quita las lineas .comment y genera una tabla
+					para descargar en Excel
+				</p>
+			</div>
 
-</head>
-<body>
-    <div class="mt-10 mx-40" >
-        <div class=" my-10 ">
-            <h3 class="text-xl font-bold">JSON to Excel</h3>
-            <p class="text-sm">Procesa JSON, quita las lineas .comment y genera una tabla para descargar en Excel</p>
-         </div>
-        
-        <textarea id="jsonInput" placeholder="Pega tu JSON aquí" class="w-full h-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"></textarea>
-        <button id="processButton" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
-        Procesar a Excel</button>
-    </div>
+			<!-- <textarea id="jsonInput" placeholder="Pega tu JSON aquí" ></textarea>
+        	<textarea id="jsonInput" placeholder="Pega tu JSON aquí" class="h-96 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"></textarea>
+        	<textarea id="jsonInput" placeholder="Pega tu JSON aquí" class="h-96 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"></textarea>
+         -->
+			<div class="flex gap-4 h-5/6">
+				<div class="border-4 border-red-200 bg-red-200">
+					<label for="jsonInput1">JSON English:</label>
+					<textarea
+						id="jsonInput1"
+						rows="4"
+						cols="50"
+						class=" w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"
+					></textarea
+					><br />
+				</div>
+				<div>
+				<label for="jsonInput2">JSON Spanish:</label>
+				<textarea
+					id="jsonInput2"
+					rows="4"
+					cols="50"
+					class="w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"
+				></textarea
+				></div>
+				<div>
+				<label for="jsonInput3">JSON French:</label>
+				<textarea
+					id="jsonInput3"
+					rows="4"
+					cols="50"
+					class="  w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"
+				></textarea
+				></div>
+			</div>
+			<button
+				id="processButton"
+				class="pl-40 pr-40 my-6 mx-auto bg-slate-800 hover:bg-gray-100 text-slate-100 font-semibold self-end py-2 border border-gray-400 rounded shadow"
+			>
+				Procesar a Excel
+			</button>
+		</div>
 
-    <script type="module" src="index.ts"></script>
-
-</body>
+		<script type="module" src="index.ts"></script>
+	</body>
 </html>
