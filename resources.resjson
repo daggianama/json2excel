@@ -1,0 +1,678 @@
+﻿//======================================================================================================
+//======================================= Invetory comment. ===================================
+//======================================================================================================
+{
+  //======================== View extension titles. ========================
+  "string_0001": "Purchase Orders",
+  "_string_0001.comment": "Purchase Orders view",
+
+  "string_0002": "Purchase Orders Lines",
+  "_string_0002.comment": "Purchase Order Line View",
+
+  "string_0003": "Confirmation Journal",
+  "_string_0003.comment": "Confirmation Journal View",
+
+  "string_0004": "Receipt Journal",
+  "_string_0004.comment": "Receipt Journal View",
+
+  //======================== Column names.  ========================
+  "string_1001": "ORDER NUMBER",
+  "string_1001.comment": "Table header label for order number",
+
+  "string_1002": "VENDOR",
+  "_string_1002.comment": "Table header label for vendor",
+
+  "string_1003": "DELIVERY DATE",
+  "_string_1003.comment": "Table header label for Delivery date",
+
+  "string_1004": "Internal Request",
+  "_string_1004.comment": "Table header label for internal request",
+
+  "string_1005": "Ship To",
+  "_string_1005.comment": "Table header label for ship to",
+
+  "string_1006": "Status",
+  "_string_1006.comment": "Table header label for status",
+
+  "string_1007": "RECEIPT NUMBER",
+  "_string_1007.comment": "Table header label for receipt number",
+
+  "string_1008": "ITEM",
+  "string_1008.comment": "Purchase order line label for item number",
+
+  "string_1009": "PRICE",
+  "_string_1009.comment": "Purchase order line label for price",
+
+  "string_1010": "ORDERED",
+  "_string_1010.comment": "Purchase order line label for ordered quantity",
+
+  "string_1011": "BATCH NUMBER",
+  "_string_1011.comment": "Purchase order line label for batch number",
+
+  "string_1012": "SERIAL NUMBER",
+  "_string_1012.comment": "Purchase order line label for serial number",
+
+  "string_1013": "EXPIRY DATE",
+  "_string_1013.comment": "Purchase order line label for expiry date",
+
+  "string_1014": "LOCATION",
+  "_string_1014.comment": "Purchase order line label for location",
+
+  "string_1015": "LINENUMBER",
+  "_string_1015.comment": "Purchase order line label for line number",
+
+  "string_1016": "STATUS",
+  "_string_1016.comment": "Purchase order line label for status",
+
+  "string_1017": "OWENERSHIP",
+  "_string_1017.comment": "OWENERSHIP label for Purchase Order grid column",
+
+  "string_1018": "Vendor Name",
+  "_string_1018.comment": "Vendor Name grid column.",
+
+  "string_1019": "Confirmation Status",
+  "_string_1019.comment": "Confirmation Status grid column.",
+
+  "string_1020": "Confirmation Id",
+  "_string_1020.comment": "Confirmation Id grid column.",
+
+  "string_1021": "Confirmation Date",
+  "_string_1021.comment": "Confirmation Date grid column.",
+
+  "string_1022": "Amount",
+  "_string_1022.comment": "Amount grid column.",
+
+  "string_1023": "Currency",
+  "_string_1023.comment": "Currency grid column.",
+
+  "string_1024": "Name",
+  "_string_1024.comment": "Product Name column.",
+
+  "string_1025": "Unit",
+  "_string_1025.comment": "Unit column.",
+
+  "string_1026": "Net Amount",
+  "_string_1026.comment": "Net Amount column.",
+
+  "string_1027": "Receipt Number",
+  "_string_1027.comment": "Receipt Number grid column.",
+
+  "string_1028": "Receipt Date",
+  "_string_1028.comment": "Receipt Date grid column.",
+
+  "string_1029": "Ordered Quantity",
+  "_string_1029.comment": "Ordered Quantity grid column.",
+
+  "string_1030": "Received",
+  "_string_1030.comment": "Received grid column.",
+
+  "string_1031": "Receiving now",
+  "_string_1031.comment": "Receiving now grid column.",
+
+  "string_1032": "Cancelled",
+  "_string_1032.comment": "Cancelled grid column.",
+
+  "string_1033": "Product Number",
+  "_string_1033.comment": "Product Number grid column.",
+
+  "string_1034": "Product Name",
+  "_string_1034.comment": "Product Name grid column.",
+
+  "string_1035": "Created Date",
+  "_string_1035.comment": "Created Date grid column.",
+
+  //======================== Dialog labels. ========================
+  "string_2001": "Create Purchase Order",
+  "_string_2001.comment": "Create Purchase Order Dialog.",
+
+  "string_2002": "Save",
+  "_string_2002.comment": "Save details.",
+
+  "string_2003": "Update",
+  "_string_2003.comment": "Update the Additional Details.",
+
+  "string_2004": "Cancel",
+  "_string_2004.comment": "Cancel button used to dismiss a dialog.",
+
+  "string_2005": "Batch No",
+  "_string_2005.comment": "Batch No text field label.",
+
+  "string_2006": "Expiry Date",
+  "_string_2006.comment": "Expiry Date field label.",
+
+  "string_2007": "Purchase Order Report",
+  "_string_2007.comment": "Purchase Order Report label.",
+
+  "string_2008": "Generating Report...",
+  "_string_2008.comment": "Generating Report label.",
+
+  "string_2009": "Validation Error",
+  "_string_2009.comment": "Validation Error label.",
+
+  "string_2010": "Please select the Vendor.",
+  "_string_2010.comment": "Please select the Vendor label.",
+
+  "string_2011": "Please enter the Internal Request number.",
+  "_string_2011.comment": "Please enter the Internal Request number label.",
+
+  "string_2012": "Please select Today's or Future delivery date only.",
+  "_string_2012.comment": "Please select Today's or Future delivery date only label.",
+
+  "string_2013": "Choose Vendor",
+  "_string_2013.comment": "Choose Vendor label.",
+
+  "string_2014": "Ship To",
+  "_string_2014.comment": "Ship To label.",
+
+  "string_2015": "Filter",
+  "_string_2015.comment": "Filter label.",
+
+  "string_2016": "Apply",
+  "_string_2016.comment": "Apply label.",
+
+  "string_2017": "Please enter a valid Delivery Date.",
+  "_string_2017.comment": "Please enter a valid Delivery Date label.",
+
+  "string_2018": "Cancel Filter",
+  "_string_2018.comment": "Cancel Filter label.",
+
+  "string_2019": "Record deleted successfully.",
+  "_string_2019.comment": "Record deleted successfully label.",
+
+  "string_2020": "Failed to delete the record.",
+  "_string_2020.comment": "Failed to delete the record label.",
+
+  "string_2021": "Message",
+  "_string_2021.comment": "Message label.",
+
+  "string_2022": "Error",
+  "_string_2022.comment": "Error label.",
+
+  "string_2023": "Product not found",
+  "_string_2023.comment": "Product not found Label.",
+
+  "string_2024": "Records saved sccesfully.",
+  "_string_2024.comment": "Records saved sccesfully Label.",
+
+  "string_2025": "Please select Location.",
+  "_string_2025.comment": "Please select Location Label.",
+
+  "string_2026": "Choose Location.",
+  "_string_2026.comment": "Choose Location Label.",
+
+  "string_2027": "Please cancel the filter before creating the new Purchase Order.",
+  "_string_2027.comment": "Please cancel the filter before creating the new Purchase Order Label.",
+
+  "string_2028": "Enter Quantity",
+  "_string_2028.comment": "Enter Quantity Label.",
+
+  "string_2029": "Enter Price",
+  "_string_2029.comment": "Enter Price Label.",
+
+  "string_2030": "Scan or enter Product number",
+  "_string_2030.comment": "Scan or enter Product number Label.",
+
+  "string_2031": "Please save the unsaved Purchase order Lines.",
+  "_string_2031.comment": "Please save the unsaved Purchase order Lines Label.",
+
+  "string_2032": "Enter Packing slip id.",
+  "_string_2032.comment": "Enter Packing slip id Label.",
+
+  "string_2033": "Packing slip id.",
+  "_string_2033.comment": "Packing slip id Label.",
+
+  "string_2034": "Yes",
+  "_string_2034.comment": "Yes Label.",
+
+  "string_2035": "No",
+  "_string_2035.comment": "No Label.",
+
+  "string_2036": "Ok",
+  "_string_2036.comment": "Ok Label.",
+
+  "string_2037": "Are you sure you want to delete the Purchase Order?",
+  "_string_2037.comment": "Are you sure you want to delete the Purchase Order confirmation Label.",
+
+  "string_2038": "Delete Purchase Order",
+  "_string_2038.comment": "Delete Purchase Order Label.",
+
+  "string_2039": "Are you sure you want to delete the Purchase Order Line {0}?",
+  "_string_2039.comment": "Are you sure you want to delete the Purchase Order Line confirmation Label.",
+
+  "string_2040": "Delete Purchase Order Line",
+  "_string_2040.comment": "Delete Purchase Order Line Label.",
+
+  "string_2041": "You're going to recieve the purchase order {0}, do you want to continue?",
+  "_string_2041.comment": "You're going to recieve the purchase order {0}, do you want to continue Label.",
+
+  "string_2042": "Receive Purchase Order",
+  "_string_2042.comment": "Receive Purchase Order Label.",
+
+  "string_2043": "Add a product",
+  "_string_2043.comment": "Add a product Label.",
+
+  "string_2044": "Ownership",
+  "_string_2044.comment": "Ownership Label.",
+
+  "string_2045": "Select Status",
+  "_string_2045.comment": "Select Status Label.",
+
+  "string_2046": "Select Ownership",
+  "_string_2046.comment": "Select Ownership Label.",
+
+  "string_2047": "Select Confirmation Status",
+  "_string_2047.comment": "Select Confirmation Status Label.",
+
+  "string_2048": "Confirmation Status",
+  "_string_2048.comment": "Confirmation Status Label.",
+
+  "string_2049": "Vendor Name",
+  "_string_2049.comment": "Vendor Name Label.",
+
+  "string_2050": "Internal Request",
+  "_string_2050.comment": "Internal Request Label.",
+
+  "string_2051": "You're going to cancel the purchase order {0}, do you want to continue?",
+  "_string_2051.comment": "You're going to cancel the purchase order {0}, do you want to continue Label.",
+
+  "string_2052": "Cancel Purchase Order",
+  "_string_2052.comment": "Cancel Purchase Order Label.",
+
+  "string_2053": "Copy Purchase Order",
+  "_string_2053.comment": "Copy Purchase Order Label.",
+
+  "string_2054": "You're going to create the copy of the purchase order {0}, do you want to continue?",
+  "_string_2054.comment": "You're going to create the copy of the purchase order {0}, do you want to continue Label.",
+
+  "string_2055": "Purchase order {0} created successfully.",
+  "_string_2055.comment": "Purchase order {0} created successfully Label.",
+
+  "string_2056": "Confirm Purchase Order",
+  "_string_2056.comment": "Confirm Purchase Order Label.",
+
+  "string_2057": "You're going to Confirm of the purchase order {0}, do you want to continue?",
+  "_string_2057.comment": "You're going to Confirm of the purchase order {0}, do you want to continue Label.",
+
+  "string_2058": "Purchase order {0} confirmed successfully.",
+  "_string_2058.comment": "Purchase order {0} confirmed successfully Label.",
+
+  "string_2059": "Please add the line(s) before confirming the Purchase order {0}.",
+  "_string_2059.comment": "Please add the line(s) before confirming the Purchase order {0} Label.",
+
+  "string_2060": "The record shown has been updated by another user or process. Please try again later.",
+  "_string_2060.comment": "The record shown has been updated by another user or process. Please try again later. Label.",
+
+  "string_2061": "Filter Product",
+  "_string_2061.comment": "Filter Product Label.",
+
+  "string_2062": "Receive quantity should be less then or equal to the quantity ordered.",
+  "_string_2062.comment": "Receive quantity should be less then or equal to the quantity ordered Label.",
+
+  "string_2063": "Receive Product",
+  "_string_2063.comment": "Receive Product Label.",
+
+  "string_2064": "ITEM",
+  "string_2064.comment": "Purchase order line label for item number",
+
+  "string_2065": "Close remaining quantity",
+  "string_2065.comment": "Close remaining quantity Label.",
+
+  "string_2066": "Receive All",
+  "string_2066.comment": "Receive All dialog title Label.",
+
+  "string_2067": "Receipt quantity",
+  "string_2067.comment": "Receipt Quantity Label.",
+
+  "string_2068": "Please enter receipt quantity",
+  "string_2068.comment": "Please enter receipt quantity Label.",
+
+  "string_2069": "Split Line",
+  "string_2069.comment": "Split Line button Label.",
+
+  "string_2070": "Pause Receiving successful.",
+  "string_2070.comment": "Pause Receiving Successful Label.",
+
+  "string_2071": "Finish Receiving successful.",
+  "string_2071.comment": "Finish Receiving Successful Label.",
+
+  "string_2072": "Vendor Currency.",
+  "string_2072.comment": "Vendor Currency Label.",
+
+  "string_2073": "Search Vendors",
+  "string_2073.comment": "Search Vendors Label.",
+
+  "string_2074": "Successfully reviewed Purchase order lines.",
+  "string_2074.comment": "Successfully reviewed Purchase order lines Label.",
+
+  "string_2075": "Search Catalogs",
+  "string_2075.comment": "Search Catalogs Label.",
+
+  "string_2076": "Search Products",
+  "string_2076.comment": "Search Products Label.",
+
+  "string_2077": "Select Products",
+  "string_2077.comment": "Select Products Label.",
+
+  "string_2078": "Quantity ordered should be greater then the quantity received.",
+  "string_2078.comment": "Quantity ordered should be greater then the quantity received Label.",
+
+  "string_2079": "Please fill all serial number field(s).",
+  "string_2079.comment": "Please fill all serial number field(s) Label.",
+
+  "string_2080": "Serial No for Line No: ",
+  "string_2080.comment": "Serial No for Line No Label.",
+
+  "string_2081": "Serial numbers {0} for item {1} already exists.",
+  "string_2081.comment": "Duplicate serial number Label.",
+
+  "string_2082": "Do you want to save your changes?",
+  "string_2082.comment": "Do you want to save your changes Label.",
+
+  "string_2083": "Please enter the Batch number.",
+  "string_2083.comment": "Please enter the Batch number Label.",
+
+  "string_2084": "Batch No for Line No: ",
+  "string_2084.comment": "Batch No for Line No Label.",
+
+  "string_2085": "Search Locations",
+  "string_2085.comment": "Search Locations Label.",
+
+  "string_2086": "Choose Catalog",
+  "string_2086.comment": "Choose Catalog Label.",
+
+  "string_2087": "Receipt quantity should be greater then 0.",
+  "string_2087.comment": "Receipt quantity should be greater then 0 Label.",
+
+  "string_2088": "Packing slip id already exists.",
+  "string_2088.comment": "Packing slip id already exists Label.",
+
+  "string_2089": "Purchase Id cannot be null or blank.",
+  "string_2089.comment": "Purchase Id cannot be null or blank Label.",
+
+  "string_2090": "Purchase Order.",
+  "string_2090.comment": "Purchase Order Label.",
+
+  "string_2091": "Site:",
+  "string_2091.comment": "Site Label.",
+
+  "string_2092": "Vendor Details:",
+  "string_2092.comment": "Vendor Details Label.",
+
+  "string_2093": "Ship To:",
+  "string_2093.comment": "Ship To Label.",
+
+  "string_2094": "Invoice To:",
+  "string_2094.comment": "Invoice To Label.",
+
+  "string_2095": "Receipt logo:",
+  "string_2095.comment": "Receipt logo Label.",
+
+  "string_2096": "Name:",
+  "string_2096.comment": "Name Label.",
+
+  "string_2097": "Address:",
+  "string_2097.comment": "Address Label.",
+
+  "string_2098": "Phone/email:",
+  "string_2098.comment": "Phone/email Label.",
+
+  "string_2099": "Contact:",
+  "string_2099.comment": "Contact Label.",
+
+  "string_2100": "Contact person:",
+  "string_2100.comment": "Contact person Label.",
+
+  "string_2101": "Warehouse:",
+  "string_2101.comment": "Warehouse Label.",
+
+  "string_2102": "Date sent:",
+  "string_2102.comment": "Date sent Label.",
+
+  "string_2103": "Request delivery Date:",
+  "string_2103.comment": "Request delivery Date Label.",
+
+  "string_2104": "Total items:",
+  "string_2104.comment": "Total items Label.",
+
+  "string_2105": "Total amount:",
+  "string_2105.comment": "Total amount Label.",
+
+  "string_2106": "Currency:",
+  "_string_2106.comment": "Currency Label.",
+
+  "string_2107": "Sequence",
+  "_string_2107.comment": "Sequence Label.",
+
+  "string_2108": "Item number",
+  "_string_2108.comment": "Item number Label.",
+
+  "string_2109": "Product name",
+  "_string_2109.comment": "Product name Label.",
+
+  "string_2110": "Quantity",
+  "_string_2110.comment": "Quantity Label.",
+
+  "string_2111": "Unit price",
+  "_string_2111.comment": "Unit price Label.",
+
+  "string_2112": "Total price",
+  "_string_2112.comment": "Total price Label.",
+
+  "string_2113": "SUPPLY RESPONSIBLE",
+  "_string_2113.comment": "SUPPLY RESPONSIBLE Label.",
+
+  "string_2114": "CONTENT RESPONSIBLE",
+  "_string_2114.comment": "CONTENT RESPONSIBLE Label.",
+
+  "string_2115": "FINANCIAL RESPONSIBLE",
+  "_string_2115.comment": "FINANCIAL RESPONSIBLE Label.",
+
+  "string_2116": "MISSION RESPONSIBLE",
+  "_string_2116.comment": "MISSION RESPONSIBLE Label.",
+
+  "string_2117": "NAME:",
+  "_string_2117.comment": "NAME Label.",
+
+  "string_2118": "SIGNATURE:",
+  "_string_2118.comment": "SIGNATURE Label.",
+
+  "string_2119": "HEADQUARTERS:",
+  "_string_2119.comment": "HEADQUARTERS Label.",
+
+  "string_2120": "Purchase Order Report",
+  "_string_2120.comment": "Purchase Order Report Label.",
+
+  "string_2121": "None",
+  "_string_2121.comment": "None Label.",
+
+  "string_2122": "Created",
+  "_string_2122.comment": "Created Label.",
+
+  "string_2123": "Received",
+  "_string_2123.comment": "Received Label.",
+
+  "string_2124": "Invoiced",
+  "_string_2124.comment": "Invoiced Label.",
+
+  "string_2125": "Canceled",
+  "_string_2125.comment": "Canceled Label.",
+
+  "string_2126": "Draft",
+  "_string_2126.comment": "Draft Label.",
+
+  "string_2127": "InReview",
+  "_string_2127.comment": "InReview Label.",
+
+  "string_2128": "Rejected",
+  "_string_2128.comment": "Rejected Label.",
+
+  "string_2129": "Approved",
+  "_string_2129.comment": "Approved Label.",
+
+  "string_2130": "InExternalReview",
+  "_string_2130.comment": "InExternalReview Label.",
+
+  "string_2131": "Finalized",
+  "_string_2131.comment": "Finalized Label.",
+
+  "string_2132": "Confirmed",
+  "_string_2132.comment": "Confirmed Label.",
+
+  //======================== Command button labels. ========================
+  "string_3001": "View Details",
+  "_string_3001.comment": "View Details label.",
+
+  "string_3002": "New Order",
+  "_string_3002.comment": "New Order label.",
+
+  "string_3003": "Add Line",
+  "_string_3003.comment": "Add Line label.",
+
+  "string_3004": "Edit Quantity",
+  "_string_3004.comment": "Edit Quantity label.",
+
+  "string_3005": "Save",
+  "_string_3005.comment": "Save label.",
+
+  "string_3006": "Delete",
+  "_string_3006.comment": "Delete label.",
+
+  "string_3007": "Cancel",
+  "_string_3007.comment": "Cancel label.",
+
+  "string_3008": "Receive Product",
+  "_string_3008.comment": "Receive Product label.",
+
+  "string_3009": "Back",
+  "_string_3009.comment": "Back label.",
+
+  "string_3010": "Copy",
+  "_string_3010.comment": "Copy label.",
+
+  "string_3011": "Confirm",
+  "_string_3011.comment": "Confirm label.",
+
+  "string_3012": "Confirmation Journal",
+  "_string_3012.comment": "Confirmation Journal label.",
+
+  "string_3013": "Print",
+  "_string_3013.comment": "Print label.",
+
+  "string_3014": "Receipt Journal",
+  "_string_3014.comment": "Receipt Journal label.",
+
+  "string_3015": "Receive All",
+  "_string_3015.comment": "Receive All label.",
+
+  "string_3016": "Pause Receiving",
+  "_string_3016.comment": "Pause Receiving label.",
+
+  "string_3017": "Finish Receiving",
+  "_string_3017.comment": "Finish Receiving label.",
+
+  "string_3018": "Cancel Receiving",
+  "_string_3018.comment": "Cancel Receiving label.",
+
+  "string_3019": "Review",
+  "_string_3019.comment": "Review label.",
+
+  "string_3020": "Cancel Filter",
+  "_string_3020.comment": "Cancel Filter label.",
+
+  "string_3021": "Edit",
+  "_string_3021.comment": "Edit label.",
+
+  "string_3022": "Refresh",
+  "_string_3022.comment": "Refresh label.",
+
+  "string_3023": "Catalogs",
+  "string_3023.comment": "Catalogs label.",
+
+  "string_3024": "PO Inquiry",
+  "string_3024.comment": "PO Inquiry label.",
+
+  //======================== View Extension labels. ========================
+  "string_4001": "Header",
+  "_string_4001.comment": "Header label.",
+
+  "string_4002": "Lines",
+  "_string_4002.comment": "Lines label.",
+
+
+  //======================== Invent On Hand labels. ========================
+
+  "InventOnHand": "On hand",
+  "InventOnHand.comment": "On hand label",
+
+  "ItemId": "Item number",
+  "ItemId.comment": "Item number label",
+
+  "InventSiteId": "Site",
+  "InventSiteId.comment": "Site label",
+
+  "InventLocationId": "Warehouse",
+  "InventLocationId.comment": "Warehouse label",
+
+  "WMSLocationId": "Location",
+  "WMSLocationId.comment": "Location label",
+
+  "InventBatchId": "Batch number",
+  "InventBatchId.comment": "Batch number label",
+
+  "InventSerialId": "Serial number",
+  "InventSerialId.comment": "Serial number label",
+
+  "AvailPhysical": "Available physical",
+  "AvailPhysical.comment": "Available physical label",
+
+  "PhysicalInvent": "Physical inventory",
+  "PhysicalInvent.comment": "Physical inventory label",
+
+  "ReservPhysical": "Physical reserved",
+  "ReservPhysical.comment": "Physical reserved label",
+
+  "OnOrder": "On order",
+  "OnOrder.comment": "On order label",
+
+  "Ordered": "Ordered",
+  "Ordered.comment": "Ordered label",
+
+  "FilterCommand": "Filter",
+  "FilterCommand.comment": "On Filter label",
+
+  "FilterTitle": "Filter",
+  "FilterTitle.comment": "On Filter label",
+
+  "DimensionCommand": "Report dimensions",
+  "DimensionCommand.comment": "On Dimension Display label",
+
+  "ScanCommand": "Scan",
+  "ScanCommand.comment": "On Scan label",
+
+  "LocationFilter": "Location",
+  "LocationFilter.comment": "On Location label",
+
+  "BatchNumberFilter": "Batch Number",
+  "BatchNumberFilter.comment": "On Batch Number label",
+
+  "ExpiryDateFilter": "Expiry Date",
+  "ExpiryDateFilter.comment": "On Expiry Date label",
+
+  "SerialNumberFilter": "Serial Number",
+  "SerialNumberFilter.comment": "On Serial Number label",
+
+  "BarcodeNotFound": "Barcode not found",
+  "BarcodeNotFound.comment": "Barcode not found label",
+
+  "BarcodeDialogTitle": "Scan a Barcode",
+  "BarcodeDialogTitle.comment": "Scan a Barcode label",
+
+  "BarcodeDialogSubTitle": "Scan or enter Product Barcode",
+  "BarcodeDialogSubTitle.comment": "Scan or enter Product Barcode label",
+
+  "OrderedInTotal": "Ordered in total",
+  "OrderedInTotal.comment": "Ordered in total label",
+
+  "DimensionsDisplay": "Dimensions display",
+  "DimensionsDisplay.comment": "Dimensions display label"
+}
