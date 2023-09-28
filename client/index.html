@@ -9,11 +9,12 @@
 		/>
 		<script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx-populate/1.21.0/xlsx-populate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.13/xlsx.full.min.js"></script>
 
 		<link rel="stylesheet" href="index.css" />
 	</head>
 	<body>
-		<div class="flex flex-col my-1">
+		<div class="flex flex-col my-1 mx-auto">
 			<div class="my-10 flex flex-col">
 				<h3 class="text-xl font-bold text-left">JSON to Excel</h3>
 				<p class="text-sm text-left">
@@ -26,7 +27,7 @@
         	<textarea id="jsonInput" placeholder="Pega tu JSON aquí" class="h-96 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"></textarea>
         	<textarea id="jsonInput" placeholder="Pega tu JSON aquí" class="h-96 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow"></textarea>
          -->
-			<div class="flex gap-4 h-5/6">
+			<div class="flex gap-4 h-4/6 ">
 				<div class="border-4 border-red-200 bg-red-200">
 					<label for="jsonInput1">JSON English:</label>
 					<textarea
@@ -56,25 +57,34 @@
 					></textarea>
 				</div>
 			</div>
-            <button
-					id="processButton"
-					class="px-20 my-6 mx-auto bg-slate-700 hover:bg-gray-600 text-slate-100 font-semibold self-end py-2 rounded shadow"
-				>
-					Procesar a Excel
-				</button>
-			<div class="flex my-6 mx-auto p-4 gap-32  bg-slate-200">
-                <h1 class="font-bold">EXCEL FILE</h1>
-			    <input type="file" id="uploadExcelFile" />
-				
-				<button
+			<button
+				id="processButton"
+				class="px-20 mb-6 mt-2 mx-auto bg-slate-700 hover:bg-gray-600 text-slate-100 font-semibold self-end py-2 rounded shadow"
+			>
+				Procesar a Excel
+			</button>
+
+            <div >
+                <h3 class="text-xl font-bold text-left mt-4">Excel to JSON</h3>
+                
+            </div>
+			<div class="flex mt-2 mb-8  p-6 bg-slate-200 justify-around  ">
+<!--                 
+				<iframe width="400" height="496" frameborder="0" scrolling="no" src="https://onedrive.live.com/embed?resid=6C685993F809A9F8%212757&authkey=%21AABR6KgqMF_ImYs&em=2&wdAllowPasting=True&wdAllowInteractivity=True&AllowTyping=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True&edesNext=true&ejss=True"></iframe>
+				 -->
+                <div class="flex flex-col mt-22">
+                    <h1 class=" mb-2 ml-4">or upload EXCEL FILE</h1>
+			        <input class="bg-slate-50  border-2 ml-4" type="file" class="pl-32" id="uploadExcelFile" />
+                    <button
 					id="uploadExcel"
-					class="px-8  bg-slate-500 hover:bg-gray-400 text-slate-100 self-end py-2 border border-gray-400 rounded shadow"
+					class="px-8 mt-16 mx-auto bg-slate-500 hover:bg-gray-400 text-slate-100 self-end py-2 border border-gray-400 rounded shadow"
 				>
 					Descargar JSON
 				</button>
+                </div>
+
                 
 			</div>
-			
 		</div>
 
 		<script type="module" src="index.ts"></script>
