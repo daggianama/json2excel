@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inter:400,700&display=swap');
+
+* {
+  line-height: 1.5;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: Inter,  sans-serif ;
+
+  
+}
+
+body {
+  background-color: #eff6f874;
+  padding: 0 8em;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+textarea {
+  height: 64vh;
+}
