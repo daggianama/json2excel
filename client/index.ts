@@ -1,8 +1,9 @@
 import { generateExcelFile } from "./generateExcelFile"; 
 import { processData } from "./dataProcessor";
 import { processExcelFile } from "./processExcelFile";
-import { processExcelEmbed } from "./processExcelEmbed";
-
+//import { processExcelEmbed } from "./processExcelEmbed";
+import * as XLSX from "xlsx";
+import FileSaver from  "file-saver";
 
 document.addEventListener("DOMContentLoaded", function () {
 	const jsonInput1 = document.getElementById(
@@ -21,10 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
 		"processButton"
 	) as HTMLButtonElement | null;
 
-	const uploadExcel = document.getElementById('uploadExcel') as HTMLButtonElement | null;
-	const iframe = document.querySelector('iframe');
+	const fileInput = document.getElementById(
+		"uploadExcelFile"
+	) as HTMLInputElement | null;
 
-	if (processButton) {
+	
+
+	//const uploadExcel = document.getElementById('uploadExcel') as HTMLButtonElement | null;
+	//const iframe = document.querySelector('iframe');
+
+	if (processButton && fileInput && fileInput.files) {
 		processButton.addEventListener("click", async (event) => {
 			const jsonText1 = jsonInput1.value;
 			const jsonText2 = jsonInput2.value;
@@ -47,9 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 				// Procesar los datos utilizando la función processData
 				const filteredData = processData(lines1, lines2, lines3);
-
+				console.log(filteredData);
 				// Generar el libro de Excel
-				const wb = generateExcelFile(filteredData);
+				generateExcelFile(filteredData, fileInput.files![0]);
+
 
 				
 			} catch (error) {
@@ -68,86 +76,43 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
-	// if (uploadExcel && excelContainer) {
-    //     let workbook: XLSX.WorkBook;
-    //     let worksheet: XLSX.WorkSheet;
-
-    //     // Función para habilitar la edición de la hoja de Excel en el div
-    //     const enableEditing = () => {
-    //         // Crea un nuevo libro de Excel
-    //         workbook = XLSX.utils.book_new();
-    //         worksheet = XLSX.utils.aoa_to_sheet([[]]); // Crea una hoja de Excel vacía
-
-    //         // Agrega la hoja de Excel al libro
-    //         XLSX.utils.book_append_sheet(workbook, worksheet, 'Sheet1');
-
-    //         // Crea un editor web de Excel en el div
-    //         const excelEditor = new XLSX.Editor({ target: excelContainer, book: workbook });
-
-    //         // Habilita la edición
-    //         excelEditor.setEditMode(true);
-    //     };
-
-    //     	uploadExcel.addEventListener('click', () => {
-    //         if (!workbook || !worksheet) {
-    //             alert('Primero habilite la edición de la hoja de Excel.');
-    //             return;
-    //         }
-
-    //         // Obtiene los datos editados de la hoja de Excel
-    //         const data = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-
-    //         // Procesa los datos según sea necesario
-    //         console.log('Datos de la hoja de Excel:', data);
-            
-    //         processExcelFile(data);
-
-    //         // Limpia el contenido del div
-    //         excelContainer.innerHTML = '';
-
-    //         // Deshabilita la edición
-    //         workbook = undefined;
-    //         worksheet = undefined;
-    //     });
-
-    //     // Habilita la edición de la hoja de Excel en el div cuando se carga la página
-    //     enableEditing();
-	// }
 	
-	if (uploadExcel) {
-		uploadExcel.addEventListener("click", async (event) => {
-			const fileInput = document.getElementById(
-				"uploadExcelFile"
-			) as HTMLInputElement | null;
+	// if (uploadExcel) {
+	// 	uploadExcel.addEventListener("click", async (event) => {
+	// 		const fileInput = document.getElementById(
+	// 			"uploadExcelFile"
+	// 		) as HTMLInputElement | null;
 
-			if (fileInput) {
-				console.log(fileInput.files);
-				processExcelFile(fileInput.files![0]);
-			}
+	// 		if (fileInput) {
+	// 			console.log(fileInput.files);
+	// 			processExcelFile(fileInput.files![0]);
+	// 		}
+	// 		else {
+	// 			console.log('No se encontró el input de tipo file.');
+	// 		}
+	// 	});
+	// }
 
-		});
-	}
-
-	if (uploadExcel && iframe?.contentDocument  ) {
+// 	if (uploadExcel && iframe?.contentDocument  ) {
 		
-		uploadExcel.addEventListener('click', () => {
+// 		uploadExcel.addEventListener('click', () => {
 		 
-		  const iframeContent = iframe.contentDocument || iframe.contentWindow?.document;
-		  const excelTable = iframeContent?.querySelector('table'); // Suponiendo que la hoja de Excel está representada como una tabla
+// 		  const iframeContent = iframe.contentDocument || iframe.contentWindow?.document;
+// 		  const excelTable = iframeContent?.querySelector('table'); // Suponiendo que la hoja de Excel está representada como una tabla
 		  
-		  if (excelTable) {
+// 		  if (excelTable) {
 			
-			console.log('Datos de Excel encontrados:', excelTable);
+// 			console.log('Datos de Excel encontrados:', excelTable);
 			
-			 /* ... transforma excelTable en una estructura de datos compatible con xlsx ... */;
+// 			 /* ... transforma excelTable en una estructura de datos compatible con xlsx ... */;
 			
-			// Llama a la función processExcelFile con los datos directamente
-			processExcelEmbed(excelTable);
-		  } else {
-			console.log('No se encontró la tabla de Excel en el iframe.');
-		  }
-		});
-	  }
+// 			// Llama a la función processExcelFile con los datos directamente
+// 			processExcelEmbed(excelTable);
+// 		  } else {
+// 			console.log('No se encontró la tabla de Excel en el iframe.');
+// 		  }
+// 		});
+// 	  }
 	  
-});
+ });
 	
