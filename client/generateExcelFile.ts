@@ -50,7 +50,7 @@ export function generateExcelFile(filteredData: Record<string, string>[], file: 
 			   console.log(userExcelValues);
 			   // Compara con datos del archivo del usuario y agrega en rojo si no está presente
 			   if (!userExcelValues.has(value1)) {
-				   filteredData[i].value1 =  " <<<--------------- NEW --------";
+				   filteredData[i].value1 =  "   	  	 NEW LABEL	";
 			   }
 			   
 			}
