@@ -57,12 +57,23 @@
 					></textarea>
 				</div>
 			</div>
-			<button
-				id="processButton"
-				class="px-20 mb-6 mt-2 mx-auto bg-slate-700 hover:bg-gray-600 text-slate-100 font-semibold self-end py-2 rounded shadow"
+			<div class="flex py-6 gap-6 content-baseline  h-16  ">
+				<div class="flex gap-2">
+				<input class="bg-white h-12  border-2 " type="file" class="pl-32" id="uploadExcelFile" />
+				<button
+				id="compareButton"
+				class="px-12 mb-6 mt-2 mx-auto bg-slate-700 hover:bg-gray-600 text-slate-100 font-semibold self-end py-2 rounded shadow"
 			>
-				Procesar a Excel
-			</button>
+				Compara y descarga Excel
+				</button>
+			</div>
+				<button
+				id="processButton"
+				class="px-12 mb-6 mt-2 mx-auto bg-slate-700 hover:bg-gray-600 text-slate-100 font-semibold self-end py-2 rounded shadow"
+			>
+				JSONS a Excel
+				</button>
+			</div>
 
             <div >
                 <h3 class="text-xl font-bold text-left mt-4">Excel to JSON</h3>
@@ -74,12 +85,12 @@
 				 -->
                 <div class="flex flex-col mt-22">
                     <h1 class=" mb-2 ml-4">or upload EXCEL FILE</h1>
-			        <input class="bg-slate-50  border-2 ml-4" type="file" class="pl-32" id="uploadExcelFile" />
+			        <input class="bg-slate-50  border-2 ml-4" type="file" class="pl-32" id="justExcel" />
                     <button
 					id="uploadExcel"
 					class="px-8 mt-16 mx-auto bg-slate-500 hover:bg-gray-400 text-slate-100 self-end py-2 border border-gray-400 rounded shadow"
 				>
-					Descargar JSON
+					Excel a JSONs
 				</button>
                 </div>
 
