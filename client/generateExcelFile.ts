@@ -20,16 +20,17 @@ export function generateExcelFile(filteredData: Record<string, string>[], file: 
 			
 			const range = XLSX.utils.decode_range(worksheet["!ref"] as any);
 			
-			 for (let rowIndex = range.s.r + 1; rowIndex <= range.e.r; rowIndex++) {
+			 for (let rowIndex = range.s.r; rowIndex <= range.e.r; rowIndex++) {
 			   const keyCell = XLSX.utils.encode_cell({
 				 r: rowIndex,
 				 c: 0,
 			   });
 				 const key = (worksheet[keyCell] as any)?.v;
-				 console.log(key);
-			   if (key !== undefined) {
+				 
+			   if (key !== undefined && key !== null && key !== " ") {
 				 userExcelValues.add(key);
 			   }
+			   console.log(userExcelValues);
 			 }
 					
          // Filtrar y resaltar datos en rojo
@@ -43,11 +44,12 @@ export function generateExcelFile(filteredData: Record<string, string>[], file: 
 		// 	}
 			
 		//  }
-			 // Filtrar y resaltar datos en rojo
+			 // Filtrar y resaltar datos 
 			 for (let i = 1; i < filteredData.length; i++) {
 				const value1 = filteredData[i]["Label-Name"];
-			   
-			   console.log(userExcelValues);
+				
+				 
+			  
 			   // Compara con datos del archivo del usuario y agrega en rojo si no está presente
 			   if (!userExcelValues.has(value1)) {
 				   filteredData[i].value1 =  "   	  	 NEW LABEL	";
