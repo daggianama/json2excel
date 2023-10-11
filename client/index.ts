@@ -33,6 +33,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		"justExcel"
 	) as HTMLInputElement | null;
 
+	const uploadExcelButton = document.getElementById(
+		"uploadExcel"
+	) as HTMLButtonElement | null;
+
 	//const uploadExcel = document.getElementById('uploadExcel') as HTMLButtonElement | null;
 	//const iframe = document.querySelector('iframe');
 
@@ -135,18 +139,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 	// JUST FOR EXCEL TO JSONS
-	if (justExcel && justExcel.files) {
-		justExcel.addEventListener("click", async (event) => {
-			const fileInput = document.getElementById(
-				"uploadExcelFile"
-			) as HTMLInputElement | null;
-
-			if (fileInput) {
-				console.log(fileInput.files);
-				processExcelFile(fileInput.files![0]);
-			} else {
-				console.log("No se encontró el input de tipo file.");
-			}
+	if (uploadExcelButton && justExcel && justExcel.files) {
+		
+			uploadExcelButton.addEventListener("click", async (event) => {
+				const fileInput = document.getElementById(
+					"justExcel"
+				) as HTMLInputElement | null;
+	
+		
+				if (fileInput) {
+					console.log(fileInput.files);
+					processExcelFile(fileInput.files![0]);
+				}
 		});
 	}
 
