@@ -7,9 +7,10 @@
 
 ## Description
 
-JSON to Excel Converter (json2excel) is a versatile tool designed to streamline the process of converting JSON data into Excel spreadsheets effortlessly. Whether you are working with complex data structures or simple JSON objects, this tool simplifies the conversion process, making it easy to generate Excel files with just a few simple steps.
-In addition it compares excel to JSON  checking for new elements.
-It is a tool created for DQS Consulting, Barcelona.
+JSON to Excel Converter (json2excel) is a versatile tool designed to streamline the process of converting JSON data into Excel spreadsheets effortlessly. <br>
+Whether you are working with complex data structures or simple JSON objects, this tool simplifies the conversion process, making it easy to generate Excel files with just a few simple steps.<br>
+In addition it compares excel to JSON  checking for new elements.<br>
+<br>It is a tool created and customised for DQS Consulting, Barcelona.
 
 ## Key Features
 
@@ -33,8 +34,10 @@ For more details, refer to the [documentation](https://github.com/daggianama/jso
 - Data Input: In the input area, paste or type the JSON-formatted text you want to convert.<br>
 - Process: Click the "JSON to Excel" button to initiate the conversion.<br>
 - Download: Once processed, the generated Excel file is available for download.<br>
+<br>
 
-## IMPORTANT! For this 2 following cases
+
+#### IMPORTANT! For the 2 following cases
 -You must have an Excel file generated with just the related info, and no spaces around it.<br>
 A recommendation is no select just the area of data to be compared and paste it on a new Excel file, like the image above.<br>
 <br>
@@ -51,7 +54,7 @@ A recommendation is no select just the area of data to be compared and paste it 
 - Download: Once processed, the generated Excel file is available for download.<br>
 
 
-### How It Works
+## How It Works
 The script performs the following steps:
 1. Takes the JSON-formatted input text and removes commas.
 
@@ -87,7 +90,7 @@ Name	John
 Age	30
 City	New York
 
-# Note
+## Note
 The script can be customized to include or exclude specific data, depending on the user's needs. Additionally, additional features can be added based on specific project requirements.
 
 ## License
