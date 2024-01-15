@@ -38,10 +38,12 @@ For more details, refer to the [documentation](https://github.com/daggianama/jso
 
 
 #### IMPORTANT! For the 2 following cases
--You must have an Excel file generated with just the related info, and no spaces around it.<br>
-A recommendation is no select just the area of data to be compared and paste it on a new Excel file, like the image above.<br>
+-You must have an Excel file generated with just the related info, excel 3 languages labels plus header  and no spaces around it.<br>
+-All labels must have text for each language field, if not issues will be shown later, NO EMPTY FIELDS.
+A recommendation is to select just the area of data(all labels without new tag) to be compared and paste it on a new empty Excel file, like the image above.<br>
 <br>
 
+![ExcelReference](client/public/excel_reference.png)
 
 ### COMPARE 3 language JSON with an Excel model file:
 - Data Input: In the input are to select a file from you computer, select the Excel file.<br>
